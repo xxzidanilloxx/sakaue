@@ -10,21 +10,27 @@ Segundo Martin Fowler, testes unitários são uma prática que visa testar peque
 
 ## Testes no contexto do processo de desenvolvimento
 
-No processo de desenvolvimento os testes são rodados de forma automática após o trigger (quando é aberto um pull request) ser ativado.
+No processo de desenvolvimento, os testes unitários são executados automaticamente quando ocorre um trigger, que, neste caso, é a abertura de um pull request.
 
-O desenvolvedor escreve os testes durante o desenvolvimento da feature ➡️ Feature finalizada ➡️ É aberto um pull request para a branch develop (onde são rodados os testes unitários) ➡️ Se falhar, retorna para a correção. Se for aprovado, é realizado o merge com a branch develop.
+### Fluxo:
+
+1️⃣ O desenvolvedor escreve os testes durante o desenvolvimento da feature.
+
+2️⃣ Após concluir a feature, o desenvolvedor abre um pull request para a branch `develop`, acionando o trigger.
+
+3️⃣ Os testes unitários são executados automaticamente.
+- Se algum teste falhar, o código retorna ao desenvolvedor para ajustes e correções. ❌
+- Se todos os testes forem aprovados, o pull request é aceito e o código é integrado à branch `develop` via merge. ✅
 
 ## Exemplos práticos
 
 ### Testes unitários no back-end
 
-A seguir temos alguns exemplos de testes unitários implementados no back-end do Projeto Integrador que estamos desenvolvendo neste semestre.
+A seguir estão exemplos de testes unitários implementados no back-end do Projeto Integrador que está sendo desenvolvido neste semestre.
 
 <details open>
-<summary>
-  
-#### PermissaoUCTest
-
+<summary>  
+  <b> PermissaoUCTest </b>
 </summary>
 
 ```java
@@ -51,13 +57,16 @@ class PermissaoUCTest {
         assertEquals("TESTE", resultado.get(0).getChave());
     }
 ```
+
+Resultado:
+
+![PermissaoUCTest](https://github.com/user-attachments/assets/8402e6e6-8bba-4f19-b345-c11411a07549)
+
 </details>
 
 <details open>
 <summary>
-  
-#### GrupoUCTest
-
+  <b> GrupoUCTest </b>
 </summary>
 
 ```java
@@ -86,5 +95,16 @@ class GrupoUCTest {
     }
 }
 ```
+
+Resultado:
+
+![GrupoUCTest](https://github.com/user-attachments/assets/69c6a878-447c-4d40-8ddf-35199014185f)
+
 </details>
+
+## Tecnologias utilizadas:
+
+![java](https://github.com/user-attachments/assets/99d67934-179e-4739-a998-7eb745f64222)
+![spring](https://github.com/user-attachments/assets/5a371f1e-11e8-4685-840d-b20d7666bde8)
+![junit](https://github.com/user-attachments/assets/3c14bef1-0146-4195-8515-d1fe7f788249)
 
