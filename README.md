@@ -8,7 +8,7 @@ Segundo Martin Fowler, testes unitários são uma prática que visa testar peque
 
 - Fonte: FOWLER, Martin. Unit Test. 2014. Disponível em: https://martinfowler.com/bliki/UnitTest.html. Acesso em: 7 nov. 2024.
 
-## Testes no contexto do processo de desenvolvimento
+## Testes unitários no contexto do processo de desenvolvimento
 
 No processo de desenvolvimento, os testes unitários são executados automaticamente quando ocorre um trigger, que, neste caso, é a abertura de um pull request.
 
@@ -60,7 +60,7 @@ class PermissaoUCTest {
 
 Resultado:
 
-![PermissaoUCTest](https://github.com/user-attachments/assets/8402e6e6-8bba-4f19-b345-c11411a07549)
+![PermissaoUCTest](https://github.com/user-attachments/assets/d09e9991-37ce-4c19-b379-f9ac4a85467e)
 
 </details>
 
@@ -98,13 +98,18 @@ class GrupoUCTest {
 
 Resultado:
 
-![GrupoUCTest](https://github.com/user-attachments/assets/69c6a878-447c-4d40-8ddf-35199014185f)
+![GrupoUCTest](https://github.com/user-attachments/assets/869c25b3-54ea-4ddd-ad7d-636b939a9115)
 
 </details>
 
-## Tecnologias utilizadas:
+## Tecnologias utilizadas
 
 ![java](https://github.com/user-attachments/assets/99d67934-179e-4739-a998-7eb745f64222)
 ![spring](https://github.com/user-attachments/assets/5a371f1e-11e8-4685-840d-b20d7666bde8)
 ![junit](https://github.com/user-attachments/assets/3c14bef1-0146-4195-8515-d1fe7f788249)
 
+## Conclusão
+
+A prática de testes unitários proporciona uma descoberta eficiente de bugs, permitindo detectar erros de entrada, saída ou lógica em blocos de código antes que eles alcancem o ambiente de produção. Com o mesmo conjunto de testes sendo executado continuamente após alterações no código, é possível identificar falhas relacionadas a bugs de maneira ágil.
+
+Além disso, os testes unitários aceleram a identificação de problemas, reduzindo o tempo gasto com depuração. Eles ajudam os desenvolvedores a localizar rapidamente a parte exata do código que apresenta o erro, promovendo um ciclo de desenvolvimento mais eficiente e confiável. Esse processo reforça a qualidade do software e a confiança na entrega contínua de funcionalidades estáveis.
