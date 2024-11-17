@@ -22,6 +22,8 @@ No processo de desenvolvimento, os testes unitários são executados automaticam
 - Se algum teste falhar, o código retorna ao desenvolvedor para ajustes e correções. ❌
 - Se todos os testes forem aprovados, o pull request é aceito e o código é integrado à branch `develop` via merge. ✅
 
+![fluxograma](https://github.com/user-attachments/assets/c3f8aa35-b480-4030-875c-b0a23b20c27e)
+
 ## Exemplos práticos
 
 ### Testes unitários no back-end
@@ -56,6 +58,7 @@ class PermissaoUCTest {
         assertEquals(1, resultado.size());
         assertEquals("TESTE", resultado.get(0).getChave());
     }
+}
 ```
 
 Resultado:
