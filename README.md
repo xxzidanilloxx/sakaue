@@ -22,17 +22,17 @@ No processo de desenvolvimento, os testes unitários são executados automaticam
 - Se algum teste falhar, o código retorna ao desenvolvedor para ajustes e correções. ❌
 - Se todos os testes forem aprovados, o pull request é aceito e o código é integrado à branch `develop` via merge. ✅
 
-![fluxograma](https://github.com/user-attachments/assets/c3f8aa35-b480-4030-875c-b0a23b20c27e)
+![fluxograma](https://github.com/user-attachments/assets/b04e4d73-c53d-4339-b575-8038799ddbfd)
 
 ## Exemplos práticos
 
-### Testes unitários no back-end
+A seguir estão exemplos de testes unitários implementados no Projeto Integrador que está sendo desenvolvido neste semestre.
 
-A seguir estão exemplos de testes unitários implementados no back-end do Projeto Integrador que está sendo desenvolvido neste semestre.
+### Testes unitários no back-end
 
 <details open>
 <summary>  
-  <b> PermissaoUCTest </b>
+  <b> PermissaoUCTest.java </b>
 </summary>
 
 ```java
@@ -69,7 +69,7 @@ Resultado:
 
 <details open>
 <summary>
-  <b> GrupoUCTest </b>
+  <b> GrupoUCTest.java </b>
 </summary>
 
 ```java
@@ -105,11 +105,76 @@ Resultado:
 
 </details>
 
+### Testes unitários no front-end
+
+<details open>
+<summary>
+  <b> table-list.component.spec.ts </b>
+</summary>
+
+```typescript
+describe('TableListComponent', () => {
+  let component: TableListComponent;
+  let fixture: ComponentFixture<TableListComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ TableListComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(TableListComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+```
+</details>
+
+<details open>
+<summary>
+  <b> typography.component.spec.ts </b>
+</summary>
+
+```typescript
+describe('TypographyComponent', () => {
+  let component: TypographyComponent;
+  let fixture: ComponentFixture<TypographyComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ TypographyComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(TypographyComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+```
+</details>
+
 ## Tecnologias utilizadas
 
 ![java](https://github.com/user-attachments/assets/99d67934-179e-4739-a998-7eb745f64222)
 ![spring](https://github.com/user-attachments/assets/5a371f1e-11e8-4685-840d-b20d7666bde8)
 ![junit](https://github.com/user-attachments/assets/3c14bef1-0146-4195-8515-d1fe7f788249)
+![typescript](https://github.com/user-attachments/assets/09006569-9e06-40bc-bd81-3805ce4c0031)
+![angular](https://github.com/user-attachments/assets/5b7c18f4-e3eb-4dea-9b0c-56f5c306da76)
+![jasmine](https://github.com/user-attachments/assets/41a07017-0233-480d-a9d3-806c6a755312)
 
 ## Conclusão
 
