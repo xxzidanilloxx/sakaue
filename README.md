@@ -1,8 +1,12 @@
-# Testes Unitários
+<div align="center">
+  <h1>Testes Unitários</h1>
+</div>
 
 ## 📖 Definição
 
-Segundo Martin Fowler, testes unitários são uma prática que visa testar o método do código para verificar sua funcionalidade correta. Ele destaca as abordagens "solitária" e "sociável": a primeira simula dependências com mocks, enquanto a segunda permite interações entre componentes reais. É recomendado que os testes sejam rápidos e executados frequentemente para facilitar a detecção de erros logo após mudanças, promovendo assim qualidade e estabilidade no desenvolvimento contínuo.
+Segundo Martin Fowler, testes unitários são uma prática que visa testar o método do código para verificar sua funcionalidade correta. Ele destaca as abordagens "solitária" e "sociável": a primeira simula dependências com mocks, enquanto a segunda permite interações entre componentes reais.
+
+É recomendado que os testes sejam rápidos e executados frequentemente para facilitar a detecção de erros logo após mudanças, promovendo assim qualidade e estabilidade no desenvolvimento contínuo.
 
 ![abordagens-testes-unitarios](https://github.com/xxzidanilloxx/sakaue/blob/main/assets/abordagens-testes-unitarios.svg)
 
@@ -15,7 +19,7 @@ A seguir está o fluxograma dos testes unitários no contexto do processo de des
 > [!IMPORTANT]
 > No processo de desenvolvimento, os testes unitários são executados automaticamente quando ocorre um trigger, que, neste caso, é a abertura de um pull request.
 
-## 📘 Orientações para Implementação de Testes Unitários
+## 📘 Orientações para implementação de testes unitários
 
 A seguir estão as orientações para a organização e implementação de testes unitários no projeto:
 
@@ -45,7 +49,7 @@ api-back/
 │   │   │       ├── inbound.rest/
 │   │   │       ├── outbound/
 │   │   │       └── PixelApplication
-│   │   └── resources/ 
+│   │   └── resources/
 │   └── test/
 │       ├── java/
 │       │   └── br.gov.sp.cps.api.pixel/
@@ -59,6 +63,7 @@ api-back/
 │       │       ├── inbound.rest/
 │       │       ├── outbound/
 │       │       └── ApplicationTests.java
+│       └── resources/
 ├── pom.xml
 └── README.md
 ```
@@ -66,13 +71,13 @@ api-back/
 
 #### 📋 Orientações
 
-1️⃣ Nome dos Arquivos de Teste:
-   - Use o mesmo nome da classe testada, adicionando o sufixo `Test`.  
+1️⃣ Nome dos arquivos de teste:
+   - Deve ser utilizado o mesmo nome da classe testada, adicionando o sufixo `Test`.  
      Exemplo:  
      - Classe: `ExemploService.java`  
      - Teste: `ExemploServiceTest.java`  
 
-2️⃣ Localização dos Testes: 
+2️⃣ Localização dos testes: 
    - Serviços: `src/test/java/br.gov.sp.cps.api.pixel/core/service/`.  
    - Casos de Uso: `src/test/java/br.gov.sp.cps.api.pixel/core/usecase/`.
 
@@ -111,14 +116,14 @@ api/
 
 #### 📋 Orientações
 
-1️⃣ Nome dos Arquivos de Teste:  
-   - Use o mesmo nome do arquivo testado, adicionando o sufixo `.spec.ts`.  
+1️⃣ Nome dos arquivos de teste:
+   - Deve ser utilizado o mesmo nome do arquivo testado, adicionando o sufixo `.spec.ts`.  
      Exemplo:  
      - Componente: `exemplo.component.ts`  
      - Teste: `exemplo.component.spec.ts`.
 
-2️⃣ Localização dos Testes:  
-   - Coloque os testes no mesmo diretório do componente, serviço ou pipe correspondente.
+2️⃣ Localização dos testes: 
+   - Os testes devem ser colocados no mesmo diretório do componente ou serviço correspondente.
 
 ## 💡 Exemplos práticos
 
@@ -156,7 +161,6 @@ class PermissaoUCTest {
     }
 }
 ```
-
 </details>
 
 <details open>
@@ -190,7 +194,6 @@ class GrupoUCTest {
     }
 }
 ```
-
 </details>
 
 ### 🧪 Testes unitários no front-end
@@ -260,18 +263,18 @@ describe('TypographyComponent', () => {
 ### 🖥️ Back-end:
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/java.svg" alt="java" width="75" height="75">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/spring.svg" alt="spring" width="75" height="75">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/junit.svg" alt="junit" width="75" height="75">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/java.svg" alt="java" width="50" height="50">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/spring.svg" alt="spring" width="50" height="50">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/junit.svg" alt="junit" width="50" height="50">
 </div>
 
 ### 🌐 Front-end:
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/typescript.svg" alt="typescript" width="75" height="75">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/angular.svg" alt="angular" width="75" height="75">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/jasmine.svg" alt="jasmine" width="75" height="75">
-  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/karma.svg" alt="karma" width="75" height="75">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/typescript.svg" alt="typescript" width="50" height="50">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/angular.svg" alt="angular" width="50" height="50">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/jasmine.svg" alt="jasmine" width="50" height="50">
+  <img src="https://github.com/xxzidanilloxx/sakaue/blob/main/assets/karma.svg" alt="karma" width="50" height="50">
 </div>
 
 ## 🎯 Conclusão
@@ -284,4 +287,8 @@ Além disso, os testes unitários aceleram a identificação de problemas, reduz
 
 FOWLER, Martin. Unit Test. 2014. Disponível em: https://martinfowler.com/bliki/UnitTest.html. Acesso em: 7 nov. 2024.
 
-O QUE É TESTE UNITÁRIO? Disponível em: https://aws.amazon.com/what-is/unit-testing/. Acesso em: 20 nov. 2024.
+AMAZON. What is Unit Testing? Disponível em: https://aws.amazon.com/what-is/unit-testing/. Acesso em: 20 nov. 2024.
+
+FOWLER, Martin. Given-When-Then. Disponível em: https://martinfowler.com/bliki/GivenWhenThen.html. Acesso em: 22 nov. 2024.
+
+MICROSOFT. Unit test basics. Disponível em: https://learn.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022. Acesso em: 22 nov. 2024.
