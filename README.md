@@ -21,6 +21,9 @@ A seguir está o fluxograma dos testes unitários no contexto do processo de des
 
 ## 📘 Orientações para implementação de testes unitários
 
+> [!IMPORTANT]
+> Recomendações gerais: Ao incluir um novo teste e perceber que um teste já existente interfere em sua execução, é necessária refatoração imediata. A responsabilidade pela correção deve ser da pessoa que identificou o problema, garantindo eficiência e promovendo a colaboração na equipe.
+
 ### 🖥️ Back-end:
 
 A seguir está a estrutura e as orientações para a organização e implementação de testes unitários no back-end do projeto:
