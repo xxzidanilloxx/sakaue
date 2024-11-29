@@ -6,9 +6,9 @@
 
 Segundo Martin Fowler, testes unitários são uma prática que visa testar o método do código para verificar sua funcionalidade correta. Ele destaca as abordagens "solitária" e "sociável": a primeira simula dependências com mocks, enquanto a segunda permite interações entre componentes reais.
 
-É recomendado que os testes sejam rápidos e executados frequentemente para facilitar a detecção de erros logo após mudanças, promovendo assim qualidade e estabilidade no desenvolvimento contínuo.
-
 ![abordagens-testes-unitarios](https://github.com/xxzidanilloxx/sakaue/blob/main/assets/abordagens-testes-unitarios.svg)
+
+É recomendado que os testes sejam rápidos e executados frequentemente para facilitar a detecção de erros logo após mudanças, promovendo assim qualidade e estabilidade no desenvolvimento contínuo.
 
 ## ⚙️ Testes unitários no contexto do processo de desenvolvimento
 
@@ -17,15 +17,13 @@ A seguir está o fluxograma dos testes unitários no contexto do processo de des
 ![fluxograma-testes-unitarios](https://github.com/xxzidanilloxx/sakaue/blob/main/assets/fluxograma-testes-unitarios.svg)
 
 > [!IMPORTANT]
-> No processo de desenvolvimento, os testes unitários são executados automaticamente quando ocorre um trigger, que, neste caso, é a abertura de um pull request.
+> No processo de desenvolvimento, os testes unitários são executados automaticamente quando ocorre um trigger, que, neste caso, é a abertura de um pull request para a branch develop.
 
 ## 📘 Orientações para implementação de testes unitários
 
-A seguir estão as orientações para a organização e implementação de testes unitários no projeto:
-
 ### 🖥️ Back-end:
 
-Os testes devem ser colocados no diretório correspondente em `src/test/java`, espelhando a estrutura de `src/main/java`.
+A seguir está a estrutura e as orientações para a organização e implementação de testes unitários no back-end do projeto:
 
 #### 📂 Estrutura
 <details open>
@@ -78,12 +76,14 @@ api-back/
      - Teste: `ExemploServiceTest.java`  
 
 2️⃣ Localização dos testes: 
-   - Serviços: `src/test/java/br.gov.sp.cps.api.pixel/core/service/`.  
-   - Casos de Uso: `src/test/java/br.gov.sp.cps.api.pixel/core/usecase/`.
+   - Os testes devem ser colocados no diretório correspondente em `src/test/java`, espelhando a estrutura de `src/main/java`.
+     Exemplo:
+     - Serviços: `src/test/java/br.gov.sp.cps.api.pixel/core/service/`.  
+     - Casos de Uso: `src/test/java/br.gov.sp.cps.api.pixel/core/usecase/`.
 
 ### 🌐 Front-end:
 
-Os testes no front-end devem ser colocados no mesmo diretório do código testado, com o sufixo `.spec.ts`.
+A seguir está a estrutura e as orientações para a organização e implementação de testes unitários no front-end do projeto:
 
 #### 📂 Estrutura
 <details open>
